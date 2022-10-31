@@ -37,6 +37,10 @@ body {
     text-decoration: underline;
     font-size: x-large;
     color: antiquewhite;
+} .info p2 {
+    color: lightcoral;
+} .info p3 {
+    color: red;
 }
 
 .img {
@@ -51,13 +55,25 @@ body {
     background: rgba(0,0,0,0.3);
     width: 6%;
     height: 2.4%;
-    border: 2px solid white;
+    border: 0.2vw dashed white;
     border-radius: 50%;
     display: inline-block;
-} .circle:hover {background: rgba(0,0,0,0.5);}
+} .circle:hover {
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+    -webkit-animation: spinAround 9s linear infinite;
+    -moz-animation: spinAround 9s linear infinite;
+    animation: spinAround 9s linear infinite;
+}
+@-webkit-keyframes spinAround {from {-webkit-transform: rotate(0deg)} to {-webkit-transform: rotate(360deg);}}
+@-moz-keyframes spinAround {from {-moz-transform: rotate(0deg)} to {-moz-transform: rotate(360deg);}}
+@keyframes spinAround {from {transform: rotate(0deg)} to {transform: rotate(360deg);}}
 
 #varken {left: 90%; bottom: 5%;}
-
+#gitaar {left: 5%; bottom: 30%;}
+#drums {left: 47%; bottom: 26%;}
+#knife {left: 30%; bottom: 70%;}
+#hell {left: 80%; bottom: 85%;}
 
 @media (max-width: 920px) {
     .everything {display: none;}

@@ -1,14 +1,13 @@
 $(document).ready(function() {
-
-	//VARKEN
-	var varken = $("#varken-audio")[0];
-	$("#varken").mouseenter(function() {
-		varken.play();
+	$(".circle").hover(function(e) {
+		var audioName = $(e.target).attr("id") + "-audio";
+		var audio = $("#" + audioName)[0];
+		audio.play();
 	});
-	$("#varken").mouseleave(function() {
-		varken.pause();
-		varken.currentTime = 0;
-	})
-
-
+	$(".circle").mouseleave(function(e) {
+		var audioName = $(e.target).attr("id") + "-audio";
+		var audio = $("#" + audioName)[0];
+		audio.pause();
+		audio.currentTime = 0;
+	});
 });

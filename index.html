@@ -6,9 +6,12 @@
     <title>Hear The Painting, See The Sound</title>
     <link href="home.css" rel="stylesheet" type="text/css"/>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <iframe src="Audio/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
 	<script src="home.js"></script>
 </head>
 <body>
+<iframe src="Audio/silence.mp3" allow="autoplay" id="audio" hidden ></iframe>
+<embed src="Audio/silence.mp3" type="audio/mp3" autostart="true" hidden="true">
 <h1 class="small">JE SCHERM IS TE KLEIN!</h1>
 <div class="everything">
     <div class="title">
@@ -19,14 +22,21 @@
     <div class="info">
         <h3>Eigen interpretatie:</h3>
         <p>Wat mij het eerste opviel toen ik dit schilderij zag was dat het me meteen een duister/akelig gevoel gaf. Dit komt waarschijnlijk omdat het schilderij, vooral aan de bovenkant, erg donker geschilderd is. Maar ook omdat er vele rare wezens zijn en omdat de mensen er niet echt uitzien alsof ze de tijd van hun leven hebben. <br><br> Het schilderij lijkt opgedeeld te zijn in 3 delen. Aan de bovenkant lijkt het op een duistere stad en zie je verder ook geen wezens. Daaronder (vanaf het mes in her oor) word het al een stukje lichter door de wezens en andere figuren die daar zitten. Daaronder word de achtergrond ook een andere kleur, een beetje oranje/bruin achtig. Wat hier het meeste opvalt zijn de instrumenten en het wezen op de hoge stoel. In dit deel zie je ook veel meer mensen.</p>
+        <p2><p3>LET OP! </p3> Bij sommige browsers moet je 1 keer op de website klikken voordat hij audio kan afspelen!</p2>
     </div>
     <div class="img">
         <img src="Images/tuin der lusten.jpg" id="tuin" alt="Tuin Der Lusten">
-        <a class="circle" id="varken"></a>
-        <a class="circle" id="gitaar"></a>
+        <a class="circle" id="varken"></a> 
+        <a class="circle" id="gitaar"></a> 
         <a class="circle" id="drums"></a>
+        <a class="circle" id="knife"></a>
+        <a class="circle" id="hell"></a>
     </div>
 </div>
-<audio id="varken-audio" preload="none" src="Audio/varken-geluid.mp3"></audio>
+<audio id="varken-audio" preload="auto" autoplay src="Audio/varken-geluid.mp3"></audio>
+<audio id="gitaar-audio" preload="auto" autoplay src="Audio/gitaar.wav"></audio>
+<audio id="drums-audio" preload="auto" autoplay src="Audio/drums.wav"></audio>
+<audio id="knife-audio" preload="auto" autoplay src="Audio/knife.wav"></audio>
+<audio id="hell-audio" preload="auto" autoplay src="Audio/hell.wav"></audio>
 </body>
 </html>
