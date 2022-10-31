@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: radial-gradient(#000, #333);
+}.small {display: none; color: white; text-align: center;}
+
+.title {
+    position: static;
+    z-index: 1;
+    width: 100%;
+} .title img {
+    height: 4vh;
+    margin-left: 1.3vw;
+    margin-bottom: -6vh;
+} .title h1 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: xx-large;
+    font-family: sans-serif;
+} .title h2 {
+    color: rgba(255, 255, 255, 0.789);
+    margin: 0;
+    text-align: center;
+    padding: 0 20%;
+    font-family: monospace;
+    font-style: italic;
+}
+
+.info {
+    float: left;
+    width: 20%;
+    color: white;
+    padding: 0vh 4vw 0 1.3vw;
+} .info h3 {
+    text-decoration: underline;
+    font-size: x-large;
+    color: antiquewhite;
+}
+
+.img {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding-top: 3vh;
+} #tuin {width: 100%;}
+
+.circle {
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    width: 6%;
+    height: 2.4%;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+} .circle:hover {background: rgba(0,0,0,0.5);}
+
+#varken {left: 90%; bottom: 5%;}
+
+
+@media (max-width: 920px) {
+    .everything {display: none;}
+    .small {display: block;}
+}
