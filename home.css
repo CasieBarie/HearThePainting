@@ -9,10 +9,6 @@ body {
     position: static;
     z-index: 1;
     width: 100%;
-} .title img {
-    height: 4vh;
-    margin-left: 1.3vw;
-    margin-bottom: -6vh;
 } .title h1 {
     color: white;
     margin: 0;
